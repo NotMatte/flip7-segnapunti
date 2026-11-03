@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Segnapunti per il gioco di carte Flip 7: calcola mani, ×2, bonus e Flip 7 in automatico.">
+<title>Flip 7 Segnapunti</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Figtree:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span>Flip 7</span> Segnapunti</h1>
+    <div class="meta">
+      <label for="target">Si vince a</label><input id="target" type="number" min="1" step="10">
+      <span id="roundLbl"></span>
+    </div>
+  </header>
+  <div id="banner"></div>
+  <section><h2>Classifica</h2><div id="board" class="board"></div></section>
+  <section><h2 id="handTitle">Mano in corso</h2>
+    <div id="hand" class="hand"></div>
+  </section>
+  <div class="close">
+    <button class="primary" id="closeBtn">Chiudi la mano e segna</button>
+  </div>
+  <section><h2>Storico mani</h2><div class="hist" id="hist"></div>
+    <div class="close" style="margin-top:8px"><button id="undoBtn">Annulla ultima mano</button></div>
+  </section>
+  <section><h2>Giocatori</h2>
+    <div class="players" id="players"></div>
+    <div class="add" style="margin-top:8px"><input id="newName" type="text" placeholder="Nome giocatore"><button id="addBtn">Aggiungi</button></div>
+    <div class="confirm" style="margin-top:12px" id="newGameBox"></div>
+  </section>
+  <div class="rules"><b>Come si conta.</b> Somma delle carte numero → <b>×2</b> se hai la carta (solo sui numeri) → aggiungi i <b>+2…+10</b> → <b>+15</b> se hai 7 numeri diversi. Se sballi fai 0. Puoi chiudere anche con soli modificatori (il ×2 da solo vale 0). La partita finisce a fine mano quando qualcuno arriva a 200: vince chi ha di più. Se preferisci, scrivi il punteggio a mano nel campo “punti”.</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
