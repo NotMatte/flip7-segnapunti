@@ -1,4 +1,8 @@
-# Flip 7 Segnapunti
+<p align="center">
+  <img src="https://i.ibb.co/MDX70FD3/b712b955-8581-492b-82dd-e95bf3f830f3.png" alt="">
+</p>
+
+<h1 align="center">Flip 7 Segnapunti</h1>
 
 Un segnapunti web per **Flip 7**, il gioco di carte "press your luck". Tocchi le carte che ogni giocatore ha davanti e l'app calcola da sola il punteggio della mano, i totali e quanto manca per arrivare a 200.
 
